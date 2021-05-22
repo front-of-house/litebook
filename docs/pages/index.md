@@ -1,6 +1,7 @@
 ---
 meta_title: Litebook - Minimalist Docs Boilerplate
 ---
+
 # Litebook
 
 Litebook is a bare bones docs theme built with [presta](https://presta.run/).

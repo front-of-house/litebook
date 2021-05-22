@@ -2,28 +2,49 @@
   "name": "litebook",
   "version": "0.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/litebook.js",
   "scripts": {
-    "start": "npx presta watch -c presta.config.jsx",
-    "build": "npx presta build -c presta.config.jsx"
+    "build": "esbuild lib/index.jsx --bundle --outfile=dist/litebook.js --platform=node --target=node12 --external:fsevents --external:presta --external:remark* --external:rehype* --external:unified",
+    "watch": "npm run build -- --watch"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "prettier-standard --format --staged",
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
+    }
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/sure-thing/litebook.git"
+  },
+  "author": "estrattonbailey",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sure-thing/litebook/issues"
+  },
+  "homepage": "https://github.com/sure-thing/litebook#readme",
   "dependencies": {
     "@hypobox/react": "^1.2.0",
     "hypostyle": "^3.1.2",
-    "presta": "^0.31.3",
+    "presta": "^0.31.4",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "rehype-raw": "^5.1.0",
+    "rehype-stringify": "^8.0.0",
     "remark-autolink-headings": "^6.0.1",
     "remark-frontmatter": "^3.0.0",
     "remark-gfm": "^1.0.0",
     "remark-highlight.js": "^6.0.0",
-    "remark-html": "^13.0.1",
     "remark-parse": "^9.0.0",
     "remark-parse-frontmatter": "^1.0.3",
+    "remark-rehype": "^8.1.0",
     "remark-slug": "^6.0.0",
     "unified": "^9.2.1"
+  },
+  "devDependencies": {
+    "esbuild": "^0.12.1",
+    "husky": "^4.3.8",
+    "prettier-standard": "^16.4.1"
   }
 }
