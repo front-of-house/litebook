@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "name": "docs",
+  "scripts": {
+    "start": "presta watch",
+    "build": "presta"
+  },
+  "devDependencies": {
+    "litebook": "^0.2.0",
+    "presta": "^0.31.4"
+  }
+}

@@ -4,7 +4,7 @@
   "description": "",
   "main": "dist/litebook.js",
   "scripts": {
-    "build": "esbuild lib/index.jsx --bundle --outfile=dist/litebook.js --platform=node --target=node12 --external:fsevents --external:presta --external:remark* --external:rehype* --external:unified",
+    "build": "esbuild lib/index.jsx --bundle --outfile=dist/litebook.js --platform=node --target=node12 --external:fsevents --external:presta* --external:remark* --external:rehype* --external:unified",
     "watch": "npm run build -- --watch"
   },
   "keywords": [],

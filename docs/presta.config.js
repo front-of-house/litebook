@@ -1,1 +1,1 @@
-export const files = './litebook/litebook.jsx'
+export const files = './index.jsx'

@@ -1,3 +1,4 @@
+import fs from 'fs'
 import { hypostyle } from 'hypostyle'
 import React from 'react'
 import { renderToStaticMarkup } from 'react-dom/server'
@@ -97,7 +98,26 @@ export function litebook (
             },
             body: markup,
             foot: {
-              script: [{ src: '/index.js' }]
+              script: [
+                {
+                  children: `;(function () {
+  var menuToggle = document.getElementById('menuToggle')
+  var menu = document.getElementById('menu')
+
+  var open = false
+
+  menuToggle.addEventListener('click', function () {
+    if (open) {
+      menu.style.display = 'none'
+      open = false
+    } else {
+      menu.style.display = 'block'
+      open = true
+    }
+  })
+})()`
+                }
+              ]
             }
           })
         }
