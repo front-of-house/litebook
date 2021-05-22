@@ -7,11 +7,6 @@
     "build": "esbuild lib/index.jsx --bundle --outfile=dist/litebook.js --platform=node --target=node12 --external:fsevents --external:presta --external:remark* --external:rehype* --external:unified",
     "watch": "npm run build -- --watch"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "prettier-standard --format --staged"
-    }
-  },
   "keywords": [],
   "repository": {
     "type": "git",
@@ -42,10 +37,9 @@
     "unified": "^9.2.1"
   },
   "devDependencies": {
-    "commitizen": "^4.2.4",
+    "commitizen": "^4.2.2",
     "cz-conventional-changelog": "^3.3.0",
     "esbuild": "^0.12.1",
-    "husky": "^4.3.8",
     "prettier-standard": "^16.4.1",
     "semantic-release": "^17.4.3"
   }
