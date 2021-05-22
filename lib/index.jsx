@@ -63,7 +63,7 @@ export function litebook (
             // push child link
             category.children.push({
               url: link.url,
-              sidebar_title: link.sidebar_title
+              sidebar_title: link.sidebar_title || link.url
             })
 
             // update root pages if not exists
