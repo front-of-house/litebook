@@ -1,6 +1,6 @@
 {
   "name": "litebook",
-  "version": "0.0.0",
+  "version": "0.2.0",
   "description": "",
   "main": "dist/litebook.js",
   "scripts": {
@@ -9,8 +9,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "prettier-standard --format --staged",
-      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
+      "pre-commit": "prettier-standard --format --staged"
     }
   },
   "keywords": [],
@@ -43,8 +42,11 @@
     "unified": "^9.2.1"
   },
   "devDependencies": {
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
     "esbuild": "^0.12.1",
     "husky": "^4.3.8",
-    "prettier-standard": "^16.4.1"
+    "prettier-standard": "^16.4.1",
+    "semantic-release": "^17.4.3"
   }
 }
