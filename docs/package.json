@@ -6,7 +6,7 @@
     "build": "presta"
   },
   "devDependencies": {
-    "litebook": "^0.2.0",
+    "litebook": "^1.0.1",
     "presta": "^0.31.4"
   }
 }

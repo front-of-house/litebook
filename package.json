@@ -17,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/sure-thing/litebook/issues"
   },
-  "homepage": "https://github.com/sure-thing/litebook#readme",
+  "homepage": "https://litebook.netlify.app",
   "dependencies": {
     "@hypobox/react": "^1.2.0",
     "hypostyle": "^3.1.2",
