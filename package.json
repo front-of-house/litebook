@@ -2,11 +2,8 @@
   "name": "litebook",
   "version": "0.2.0",
   "description": "",
-  "main": "dist/litebook.js",
-  "scripts": {
-    "build": "esbuild lib/index.jsx --bundle --outfile=dist/litebook.js --platform=node --target=node12 --external:fsevents --external:presta* --external:remark* --external:rehype* --external:unified",
-    "watch": "npm run build -- --watch"
-  },
+  "main": "lib/index.js",
+  "scripts": {},
   "keywords": [],
   "repository": {
     "type": "git",
@@ -19,11 +16,9 @@
   },
   "homepage": "https://litebook.netlify.app",
   "dependencies": {
-    "@hypobox/react": "^1.2.0",
+    "hypobox": "^2.1.0",
+    "hyposcript": "^1.0.2",
     "hypostyle": "^3.1.2",
-    "presta": "^0.31.4",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
     "rehype-raw": "^5.1.0",
     "rehype-stringify": "^8.0.0",
     "remark-autolink-headings": "^6.0.1",
@@ -39,8 +34,10 @@
   "devDependencies": {
     "commitizen": "^4.2.2",
     "cz-conventional-changelog": "^3.3.0",
-    "esbuild": "^0.12.1",
     "prettier-standard": "^16.4.1",
     "semantic-release": "^17.4.3"
+  },
+  "peerDependencies": {
+    "presta": "^0.31.4"
   }
 }
