@@ -1,7 +1,7 @@
 ---
 meta_title: Setup - Litebook
 sidebar_title: Setup
-order: 1
+sidebar_order: 1
 ---
 
 # Setup

@@ -6,7 +6,12 @@
     "build": "presta"
   },
   "devDependencies": {
-    "litebook": "^1.0.1",
-    "presta": "^0.31.4"
+    "litebook": "^1.2.1",
+    "presta": "^0.31.5-beta.3"
+  },
+  "dependencies": {
+    "hypobox": "^2.1.0",
+    "hyposcript": "^1.0.4",
+    "hypostyle": "^3.1.2"
   }
 }

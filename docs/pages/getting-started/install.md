@@ -1,7 +1,7 @@
 ---
 meta_title: Installation - Litebook
 sidebar_title: Installation
-order: 0
+sidebar_order: 0
 ---
 
 # Installation

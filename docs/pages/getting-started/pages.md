@@ -1,7 +1,7 @@
 ---
 meta_title: Pages - Litebook
 sidebar_title: Pages
-order: 3
+sidebar_order: 3
 ---
 
 # Pages

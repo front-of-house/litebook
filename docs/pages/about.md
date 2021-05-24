@@ -1,7 +1,8 @@
 ---
 meta_title: About - Litebook
 sidebar_title: About
-order: 0
+sidebar_order: 0
+sidebar_pill: New!
 ---
 
 # What is this?
