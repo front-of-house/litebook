@@ -5,20 +5,30 @@ sidebar_order: 0
 sidebar_pill: New!
 ---
 
-# What is this?
+# Litebook? Presta?
 
-It's a documentation theme. It's built using [presta](https://presta.run),
-[hypostyle](https://github.com/sure-thing/hypostyle), and React.
+Litebook is a documentation _theme_. [Presta](https://presta.run/) is a
+framework for building websites, like [Next](https://nextjs.org/) or
+[Gatsby](https://www.gatsbyjs.com/).
 
-### Features
+### Presta in Brief
 
-🔥 very fast\
-🛋 incredibly simple\
-🤓 full "Github Flavored Markdown" support
+Presta is a serverless-first web framework. It leverages the ergonomics of a
+lambda to build and serve web pages and API endpoints. It also has full support
+for static generation of pages with almost no config.
 
-### Roadmap
+### How Litebook Works
 
-- more customization capabilities
-- more page configuration via metadata
-- dark mode and other themes
-- MDX... maybe
+Litebook uses `presta/source-filesystem` to source markdown files, parses the
+files to HTML and converts their filepath to a URL.
+
+It then returns two Presta methods that are used to render the page:
+
+```javascript
+import { litebook } from 'litebook'
+
+const docs = litebook('./pages', '**/*.md')(__filename)
+
+export const getStaticPaths = docs.getStaticPaths
+export const handler = docs.handler
+```

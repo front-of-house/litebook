@@ -1,6 +1,6 @@
 ---
-meta_title: Pages - Litebook
-sidebar_title: Pages
+meta_title: Creating Pages - Litebook
+sidebar_title: Creating Pages
 sidebar_order: 3
 ---
 
@@ -43,9 +43,11 @@ To customize the sidebar title, use metadata.
 Pages support basic metadata via `yaml` _frontmatter_. Use the following props
 to configure your pages.
 
-- `meta_title` - the title that appears in your browser tab
-- `sidebar_title` - the title that appears in the sidebar nav
-- `order` - `int` - the order the page should appear in the sidebar
+- `meta_title` - `string` — the title that appears in your browser tab
+- `sidebar_title` - `string` — the title that appears in the sidebar nav
+- `sidebar_order` - `int` - the order the page should appear in the sidebar
+- `sidebar_disabled` - `bool` - disable the link to this page
+- `sidebar_pill` - `string` - show a small pill label next to the link title
 
 For example:
 
@@ -53,7 +55,7 @@ For example:
 ---
 meta_title: Pages - Litebook
 sidebar_title: Pages
-order: 3
+sidebar_order: 3
 ---
 # Pages
 ```

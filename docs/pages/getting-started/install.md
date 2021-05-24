@@ -12,4 +12,7 @@ To set up your litebook site, first install `presta` and `litebook`:
 npm i presta litebook
 ```
 
-That's all you need.
+That's all you need 😎
+
+You can run `npx presta watch site.js` now if you want, we'll create that file
+in the next section ;)
