@@ -16,9 +16,11 @@
   },
   "homepage": "https://litebook.netlify.app",
   "dependencies": {
+    "deepmerge": "^4.2.2",
     "hypobox": "^2.1.0",
-    "hyposcript": "^1.0.2",
+    "hyposcript": "^1.0.4",
     "hypostyle": "^3.1.2",
+    "presta": "^0.31.5-beta.3",
     "rehype-raw": "^5.1.0",
     "rehype-stringify": "^8.0.0",
     "remark-autolink-headings": "^6.0.1",
