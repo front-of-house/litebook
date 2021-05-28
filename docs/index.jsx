@@ -1,7 +1,7 @@
 import { litebook } from 'litebook'
 
 const docs = litebook('./pages', '**/*.md', {
-  version: 'v1.2.2',
+  version: 'v1.3.2',
   document: {
     head: {
       image: '/og.png',
